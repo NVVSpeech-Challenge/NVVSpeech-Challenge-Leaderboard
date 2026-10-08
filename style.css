@@ -14,13 +14,13 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; font-size: 18px; }
 
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
   color: var(--text);
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.65;
   background: #fff;
 }
@@ -28,7 +28,7 @@ body {
 a { color: var(--primary); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-main { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+main { max-width: 1600px; margin: 0 auto; padding: 0 32px; }
 
 /* ---------- Navbar ---------- */
 .navbar {

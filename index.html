@@ -83,12 +83,13 @@
               <tr><td class="rank">4</td><td class="team"><span class="team-name">SighLogger</span><span class="team-handle">jiasy1</span></td><td>62.94</td><td>64.12</td><td class="final">63.53</td><td><span class="status-badge b-ok">Qualified</span></td></tr>
               <tr><td class="rank">5</td><td class="team"><span class="team-name">Golden</span><span class="team-handle">nv2026</span></td><td>51.48</td><td>48.02</td><td class="final">49.75</td><td><span class="status-badge b-ok">Qualified</span></td></tr>
               <tr class="is-baseline"><td>&ndash;</td><td class="team"><span class="team-name">Baseline</span><span class="team-handle">Organizers</span></td><td>34.05</td><td>32.59</td><td>33.32</td><td><span class="status-badge b-baseline">Baseline</span></td></tr>
+              <tr class="is-informal"><td>&ndash;</td><td class="team"><span class="team-name">Gemini 3.1 Flash TTS Preview</span></td><td>53.04</td><td>52.70</td><td class="final">52.87</td><td><span class="status-badge b-nc">Commercial</span></td></tr>
             </tbody>
           </table>
         </div>
 
-        <details class="detail">
-          <summary>Per-language metric breakdown (top 5)</summary>
+        <details class="detail" open>
+          <summary>Per-language metric breakdown (top 5 + commercial systems)</summary>
           <div class="table-wrap">
             <table class="ds-table">
               <thead>
@@ -100,6 +101,7 @@
                 <tr><td class="team"><span class="team-name">XingChenAGI</span><span class="team-handle">asr-student</span></td><td>0.6202</td><td>0.3592</td><td>0.0961</td><td>0.6151</td><td>0.4279</td><td>0.1694</td></tr>
                 <tr><td class="team"><span class="team-name">SighLogger</span><span class="team-handle">jiasy1</span></td><td>0.6179</td><td>0.3819</td><td>0.1126</td><td>0.6178</td><td>0.4084</td><td>0.1859</td></tr>
                 <tr><td class="team"><span class="team-name">Golden</span><span class="team-handle">nv2026</span></td><td>0.5002</td><td>0.5019</td><td>0.2294</td><td>0.4549</td><td>0.5847</td><td>0.2474</td></tr>
+                <tr class="is-informal"><td class="team"><span class="team-name">Gemini 3.1 Flash TTS Preview</span></td><td>0.4969</td><td>0.4760</td><td>0.2218</td><td>0.5096</td><td>0.5223</td><td>0.2523</td></tr>
               </tbody>
             </table>
           </div>
@@ -159,7 +161,7 @@
               </tbody>
             </table>
           </div>
-          <p class="panel-note">Final score $=0.30\times\text{Objective}+0.70\times\text{Subjective}$; Bilingual is the mean of the ZH and EN final scores.</p>
+          <p class="panel-note">Final score $=0.30\times\text{Objective}+0.70\times\text{Subjective}$; Bilingual is the mean of the ZH and EN final scores. Commercial systems have objective scores only and are listed in the Objective tab.</p>
         </div>
 
         <!-- Objective -->
@@ -173,12 +175,14 @@
                 <tr><td class="rank">1</td><td class="team"><span class="team-name">Moss-Transcribe</span><span class="team-handle">OpenMOSS</span></td><td>75.97</td><td>73.77</td><td class="final">74.87</td><td><span class="status-badge b-ok">Qualified</span></td></tr>
                 <tr class="is-baseline"><td class="rank">2</td><td class="team"><span class="team-name">Baseline</span><span class="team-handle">Organizers</span></td><td>77.62</td><td>70.30</td><td class="final">73.96</td><td><span class="status-badge b-baseline">Baseline</span></td></tr>
                 <tr><td class="rank">3</td><td class="team"><span class="team-name">Tencent-HY</span><span class="team-handle">someone111</span></td><td>76.22</td><td>69.66</td><td class="final">72.94</td><td><span class="status-badge b-ok">Qualified</span></td></tr>
+                <tr class="is-informal"><td>&ndash;</td><td class="team"><span class="team-name">Gemini 3.1 Flash TTS Preview</span></td><td>83.50</td><td>83.89</td><td class="final">83.70</td><td><span class="status-badge b-nc">Commercial</span></td></tr>
+                <tr class="is-informal"><td>&ndash;</td><td class="team"><span class="team-name">ElevenLabs</span></td><td>83.03</td><td>80.41</td><td class="final">81.72</td><td><span class="status-badge b-nc">Commercial</span></td></tr>
               </tbody>
             </table>
           </div>
-          <p class="panel-note">LALM automatic evaluation &mdash; $\text{Track2Score}=\operatorname{norm}(0.30A+0.25P+0.15N+0.15Q+0.15E)$; Final is the mean of ZH and EN, and forms the objective component of the Overall score.</p>
+          <p class="panel-note">LALM automatic evaluation &mdash; $\text{Track2Score}=\operatorname{norm}(0.30A+0.25P+0.15N+0.15Q+0.15E)$; Final is the mean of ZH and EN, and forms the objective component of the Overall score. Commercial systems (Gemini 3.1 Flash TTS Preview, ElevenLabs) are shown for comparison, but no human listening test was run for them, so they do not enter the Overall ranking.</p>
 
-          <details class="detail">
+          <details class="detail" open>
             <summary>LALM per-dimension ratings (1&ndash;5)</summary>
             <div class="table-wrap">
               <table class="ds-table">
@@ -192,6 +196,10 @@
                   <tr class="is-baseline"><td>EN</td><td>4.3675</td><td>3.8963</td><td>3.3650</td><td>3.0800</td><td>3.7400</td></tr>
                   <tr><td class="team" rowspan="2"><span class="team-name">Tencent-HY</span><span class="team-handle">someone111</span></td><td>ZH</td><td>4.5125</td><td>4.2938</td><td>3.6750</td><td>3.0775</td><td>4.0575</td></tr>
                   <tr><td>EN</td><td>4.3638</td><td>3.8438</td><td>3.3325</td><td>3.1550</td><td>3.6225</td></tr>
+                  <tr class="is-informal"><td class="team" rowspan="2"><span class="team-name">Gemini 3.1 Flash TTS Preview</span></td><td>ZH</td><td>4.6825</td><td>4.7413</td><td>4.0275</td><td>2.9613</td><td>4.6775</td></tr>
+                  <tr class="is-informal"><td>EN</td><td>4.6921</td><td>4.7484</td><td>4.0063</td><td>3.0200</td><td>4.7134</td></tr>
+                  <tr class="is-informal"><td class="team" rowspan="2"><span class="team-name">ElevenLabs</span></td><td>ZH</td><td>4.8350</td><td>4.6900</td><td>3.9150</td><td>3.0213</td><td>4.3838</td></tr>
+                  <tr class="is-informal"><td>EN</td><td>4.8075</td><td>4.5413</td><td>3.6925</td><td>3.0713</td><td>4.1613</td></tr>
                 </tbody>
               </table>
             </div>
@@ -215,7 +223,7 @@
           </div>
           <p class="panel-note">Human listening test &mdash; same $\operatorname{norm}(0.30A+0.25P+0.15N+0.15Q+0.15E)$ rubric on a 0&ndash;100 scale; Bilingual is the mean of ZH and EN.</p>
 
-          <details class="detail">
+          <details class="detail" open>
             <summary>Human listening per-dimension ratings (1&ndash;5, bilingual)</summary>
             <div class="table-wrap">
               <table class="ds-table">
@@ -270,6 +278,7 @@
         <ul class="legend-grid">
           <li class="legend-item"><span class="status-badge b-ok">Qualified</span> valid competing submission</li>
           <li class="legend-item"><span class="status-badge b-baseline">Baseline</span> organizers' reference</li>
+          <li class="legend-item"><span class="status-badge b-nc">Commercial</span> external system, out of competition</li>
         </ul>
       </div>
     </section>
